@@ -1,9 +1,6 @@
-import { Deno } from "@deno/shim-deno";
-export { Deno } from "@deno/shim-deno";
 import { crypto } from "@deno/shim-crypto";
 export { crypto } from "@deno/shim-crypto";
 const dntGlobals = {
-    Deno,
     crypto,
 };
 export const dntGlobalThis = createMergeProxy(globalThis, dntGlobals);
