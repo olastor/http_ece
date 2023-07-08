@@ -1,0 +1,32 @@
+{
+  "module": "./esm/mod.js",
+  "main": "./script/mod.js",
+  "name": "http-ec",
+  "version": "0.3.0",
+  "description": "Your package.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olastor/http_ece.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olastor/http_ece/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./esm/mod.js",
+      "require": "./script/mod.js"
+    }
+  },
+  "scripts": {
+    "test": "node test_runner.js"
+  },
+  "dependencies": {
+    "@deno/shim-deno": "~0.16.1",
+    "@deno/shim-crypto": "~0.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "picocolors": "^1.0.0"
+  }
+}

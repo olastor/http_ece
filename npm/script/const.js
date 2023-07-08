@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NONCE_INFO = exports.CEK_INFO = exports.RECORD_SIZE_MAX = exports.RECORD_SIZE_MIN = exports.DEFAULT_RECORD_SIZE = exports.HEADER_LENGTH_MIN = exports.NONCE_LENGTH = exports.TAG_LENGTH = exports.KEY_LENGTH = exports.IDLEN_LENGTH = exports.RS_LENGTH = exports.SALT_LENGTH = void 0;
+exports.SALT_LENGTH = 16;
+exports.RS_LENGTH = 4;
+exports.IDLEN_LENGTH = 1;
+exports.KEY_LENGTH = 16;
+exports.TAG_LENGTH = 16;
+exports.NONCE_LENGTH = 12;
+exports.HEADER_LENGTH_MIN = exports.SALT_LENGTH + exports.RS_LENGTH + exports.IDLEN_LENGTH;
+exports.DEFAULT_RECORD_SIZE = 1024 * 64;
+exports.RECORD_SIZE_MIN = 18;
+exports.RECORD_SIZE_MAX = 2 ** 36 - 31;
+const encoder = new TextEncoder();
+exports.CEK_INFO = encoder.encode("Content-Encoding: aes128gcm\0\x01");
+exports.NONCE_INFO = encoder.encode("Content-Encoding: nonce\0\x01");

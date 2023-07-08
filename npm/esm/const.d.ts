@@ -1,0 +1,12 @@
+export declare const SALT_LENGTH = 16;
+export declare const RS_LENGTH = 4;
+export declare const IDLEN_LENGTH = 1;
+export declare const KEY_LENGTH = 16;
+export declare const TAG_LENGTH = 16;
+export declare const NONCE_LENGTH = 12;
+export declare const HEADER_LENGTH_MIN: number;
+export declare const DEFAULT_RECORD_SIZE: number;
+export declare const RECORD_SIZE_MIN = 18;
+export declare const RECORD_SIZE_MAX: number;
+export declare const CEK_INFO: Uint8Array;
+export declare const NONCE_INFO: Uint8Array;
