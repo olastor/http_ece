@@ -1,6 +1,5 @@
 {
   "module": "./esm/mod.js",
-  "main": "./script/mod.js",
   "name": "http-ec",
   "version": "0.3.0",
   "description": "Your package.",
@@ -14,19 +13,10 @@
   },
   "exports": {
     ".": {
-      "import": "./esm/mod.js",
-      "require": "./script/mod.js"
+      "import": "./esm/mod.js"
     }
   },
-  "scripts": {
-    "test": "node test_runner.js"
-  },
   "dependencies": {
-    "@deno/shim-deno": "~0.16.1",
     "@deno/shim-crypto": "~0.3.1"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-    "picocolors": "^1.0.0"
   }
 }

@@ -4,11 +4,15 @@ import { build, emptyDir } from "https://deno.land/x/dnt/mod.ts";
 await emptyDir("./npm");
 
 await build({
+  typeCheck: false,
+  test: false,
+  declaration: false,
+  scriptModule: false,
   entryPoints: ["./mod.ts"],
   outDir: "./npm",
   shims: {
     // see JS docs for overview and more options
-    deno: true,
+    deno: false,
     crypto: true
   },
   package: {
